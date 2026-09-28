@@ -1,0 +1,20 @@
+{
+  "name": "upbot/laravel-dependencies",
+  "description": "UpBot dependency reports through Laravel Artisan and Scheduler",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/upbot-eu/dependencies-laravel",
+  "support": {
+    "source": "https://github.com/upbot-eu/dependencies-laravel",
+    "issues": "https://github.com/upbot-eu/dependencies-laravel/issues"
+  },
+  "require": {
+    "php": "^8.2",
+    "upbot/dependencies": "^0.1",
+    "illuminate/console": "^12.0 || ^13.0",
+    "illuminate/support": "^12.0 || ^13.0"
+  },
+  "autoload": { "psr-4": { "Upbot\\LaravelDependencies\\": "src/" } },
+  "extra": { "laravel": { "providers": ["Upbot\\LaravelDependencies\\UpbotServiceProvider"] } },
+  "archive": { "exclude": ["/test", "/vendor", "/composer.lock"] }
+}
