@@ -5,7 +5,7 @@
 Laravel 12/13, PHP 8.2+ (Laravel selbst kann eine neuere Version verlangen).
 Verwendet `upbot/dependencies`, Package Discovery, Artisan und den vorhandenen Scheduler.
 
-**Die Veröffentlichung auf Packagist steht noch aus.** Danach:
+Im Projekt installieren:
 
 ```sh
 composer require upbot/laravel-dependencies
@@ -29,8 +29,6 @@ ist nicht erforderlich. Als Produktionsabhängigkeit installieren. Optionale Ein
 # UPBOT_SCHEDULE_CRON="17 3 * * *"
 ```
 
-Bis zur Veröffentlichung können Entwickler Path-Repositories für dieses Paket
-und `upbot/dependencies` mit Version `0.1.0` in `options.versions` konfigurieren.
 Optional veröffentlicht `php artisan upbot init` die Datei `config/upbot.php`,
 ohne vorhandene Konfiguration zu überschreiben, falls projektspezifische
 Anpassungen erforderlich sind.

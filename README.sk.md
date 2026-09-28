@@ -5,7 +5,7 @@
 Laravel 12/13, PHP 8.2+ (samotný Laravel môže vyžadovať vyššiu verziu).
 Používa `upbot/dependencies`, package discovery, Artisan a existujúci scheduler.
 
-**Balík zatiaľ nie je publikovaný v Packagiste.** Po publikovaní:
+Inštalácia v projekte:
 
 ```sh
 composer require upbot/laravel-dependencies
@@ -29,8 +29,6 @@ Balík inštaluj ako produkčnú závislosť. Voliteľné nastavenia:
 # UPBOT_SCHEDULE_CRON="17 3 * * *"
 ```
 
-Pred publikovaním môžu vývojári nastaviť path repositories pre tento balík
-a `upbot/dependencies` s verziou `0.1.0` v `options.versions`.
 Voliteľný `php artisan upbot init` publikuje `config/upbot.php` bez prepísania
 existujúcej konfigurácie, ak projekt potrebuje upraviť predvolené nastavenia.
 
